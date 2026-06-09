@@ -24,6 +24,16 @@ To-Done Rocket Planner turns a new-tab style popup into a compact task workspace
 - `popup.css` handles the retro-styled interface and dark theme overrides
 - `js/script.js` drives task rendering, timer state, stats, banners, and theme persistence
 
+## Screenshots
+
+### Light Mode
+
+![To-Done Rocket Planner light mode screenshot](images/ext.png)
+
+### Dark Mode
+
+![To-Done Rocket Planner dark mode screenshot](images/ext-drk.png)
+
 ## Tech Stack
 
 - JavaScript
