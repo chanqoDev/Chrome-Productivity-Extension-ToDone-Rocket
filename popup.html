@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./packages/bootstrap.min.css">
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <div class="popup-shell container-fluid main">
+      <div class="popup-header">
+        <div class="popup-header__copy">
+          <div class="greeting__eyebrow greeting__type">GOOD MORNING</div>
+          <h2 class="greeting__name"><span class="name__value"></span><i class="fas fa-pen"></i></h2>
+          <div class="greeting__date">TUE · JUNE 9 · 2026</div>
+          <img id="greeting__image" src="./images/good-morning.png" alt="">
+        </div>
+        <div class="popup-header__status">
+          <button type="button" id="toggleStats" class="hud-icon-button" aria-label="Toggle weekly stats">
+            <i class="fas fa-chart-bar"></i>
+          </button>
+          <button type="button" id="toggleDarkMode" class="hud-icon-button" aria-label="Toggle dark mode">
+            <i class="fas fa-moon"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="mission-progress">
+        <div class="section-header">
+          <h5 class="section-header__label">MISSION PROGRESS</h5>
+          <span class="mission-progress__meta">0 of 0 complete</span>
+        </div>
+        <div class="mission-progress__bar">
+          <div class="progress-container">
+            <div id="progress-bar"></div>
+          </div>
+          <div class="mission-progress__percent">0%</div>
+        </div>
+      </div>
+
+      <div class="directive-panel">
+        <div class="section-header">
+          <h5 class="section-header__label">DIRECTIVES</h5>
+        </div>
+        <div class="actionInput">
+          <div class="actionInput__inputContainer">
+            <form id="addItemForm">
+              <div class="input-group input-group-lg">
+                <input name="itemText" type="text" class="form-control" placeholder="Add directive, press Enter...">
+              </div>
+            </form>
+            <div class="actionInput__suggestions">
+              <div id="quickActionsList" class="quick-actions-list"></div>
+              <button type="button" id="editQuickActions" class="quick-actions-edit">EDIT</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tasks-panel">
+        <div class="section-header">
+          <h5 class="section-header__label">QUICK LAUNCH</h5>
+        </div>
+        <div class="actionItems"></div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="updateNameModal" tabindex="-1" role="dialog" aria-labelledby="updateNameModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="updateNameModalLabel">Edit your name</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <input type="text" class="form-control" id="input__name" aria-describedby="emailHelp" placeholder="Enter name">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" id="update-name" class="btn btn-success">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="carryOverBanner" class="d-none"></div>
+    <div id="statsPanel" class="d-none"></div>
+
+    <div class="modal fade" id="quickActionsModal" tabindex="-1" role="dialog" aria-labelledby="quickActionsModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="quickActionsModalLabel">Edit quick actions</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div id="quickActionsEditor"></div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" id="addQuickActionBtn" class="btn btn-secondary">Add quick action</button>
+            <button type="button" id="saveQuickActionsBtn" class="btn btn-success">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./packages/uuidv4.min.js"></script>
+    <script src="./packages/progressbar.js"></script>
+    <script src="./js/circle.js"></script>
+    <script src="./js/action-items-utils.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./packages/fontawesome.js"></script>
+  </body>
+</html>
