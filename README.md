@@ -2,6 +2,10 @@
 
 A Chrome Extension Manifest V3 productivity dashboard for managing tasks, tracking progress, and using lightweight focus tools directly from the browser popup.
 
+[Download the app on the Chrome Web Store](https://chromewebstore.google.com/detail/to-done-rocket-planner/hfgldicbgjfimghmaoefnhadmlebhcea)
+
+![To-Done Rocket Planner promo image](promo.png)
+
 ## What It Does
 
 To-Done Rocket Planner turns a new-tab style popup into a compact task workspace. It supports fast task capture, task completion tracking, quick actions, focus timers, weekly stats, and a dark mode preference that persists across sessions.
