@@ -32,6 +32,10 @@ To-Done Rocket Planner turns a new-tab style popup into a compact task workspace
 
 ## Screenshots
 
+<a href="https://chromewebstore.google.com/detail/to-done-rocket-planner/hfgldicbgjfimghmaoefnhadmlebhcea">
+  <img alt="Chrome Web Store" src="https://img.shields.io/badge/Chrome%20Web%20Store-Download%20Now-4285F4?logo=googlechrome&logoColor=white">
+</a>
+
 ### Light Mode
 
 ![To-Done Rocket Planner light mode screenshot](images/ext.png)
