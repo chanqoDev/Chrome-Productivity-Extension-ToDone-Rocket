@@ -4,6 +4,8 @@ A Chrome Extension Manifest V3 productivity dashboard for managing tasks, tracki
 
 [Download the app on the Chrome Web Store](https://chromewebstore.google.com/detail/to-done-rocket-planner/hfgldicbgjfimghmaoefnhadmlebhcea)
 
+[![Chrome Web Store](https://img.shields.io/badge/Chrome%20Web%20Store-Download%20Now-4285F4?logo=googlechrome&logoColor=white)](https://chromewebstore.google.com/detail/to-done-rocket-planner/hfgldicbgjfimghmaoefnhadmlebhcea)
+
 ![To-Done Rocket Planner promo image](promo.png)
 
 ## What It Does
